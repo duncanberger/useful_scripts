@@ -2,8 +2,7 @@
 
 A repository of useful scripts/code used across multiple projects.
 
-## Descriptions
-### *asm_stats.py*
+## *asm_stats.py*
 - Calculates common assembly statistics for one or more FASTA files.
 - **Input:** takes either a single FASTA or a directory of FASTA files.
 
@@ -27,7 +26,7 @@ Usage:
   * gaps_sum_bp : Total gap length (bp)
   * gaps_perc : Proportion of genome composed of gaps (%)
 
-### *ari.py*
+## *ari.py*
 - Calculates the Adjusted Rand Index between clusters schemes.
 - **Input:** takes tab or comma separated files (works on any number of files ≥ 2).
 - **Input format:** sample_name,cluster_id 
@@ -37,14 +36,14 @@ Usage:
   ari.py <file1> <file2> <file3>
   ```
 - **Output:** pairwise ARI values in both list and matrix format
-### *switch_names.py*
+## *switch_names.py*
 - Switches the names of two files.
   
 Usage:
   ```
   switch_names.py --file1 <first_file> --file2 <second_file>
   ```
-### *unique_values.py*
+## *unique_values.py*
 - For a specified column, returns one representative row containing each unique value in the dataframe. Similiar to 'uniq' on a single column but returns the whole row. 
 - **Input:** takes a tab separated file with a header (relevant column must be specified with the --col parameter) and --mode determines whether the 'first' row in a dataframe containing the value is retained or a row is randomly selected.
 
