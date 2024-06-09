@@ -23,18 +23,18 @@ Parameters:
   --version                       Show program's version number and exit
 ```
 * **Output**: CSV file containing assembly metrics with columns:
-  * sampleid : Based on the first part of the input fasta (delimeter: '.')
-  * assembly_length_bp : Assembly length (bp)
-  * scaffold_count : Number of scaffolds
-  * scaffold_N50_bp : Scaffold N<sub>50</sub> (bp)
-  * scaffold_N90_bp : Scaffold N<sub>90</sub> (bp)
-  * contig_count : Number of contigs
-  * contig_N50_bp : Contig N<sub>50</sub> (bp)
-  * contig_N90_bp : Contig N<sub>90</sub> (bp)
-  * GC_perc : GC content (%)
-  * gaps_count : Number of gaps (min length to define a gap can be changed with --gap parameter)
-  * gaps_sum_bp : Total gap length (bp)
-  * gaps_perc : Proportion of genome composed of gaps (%)
+  * _sampleid_ : Based on the first part of the input fasta (delimeter: '.')
+  * _assembly_length_bp_ : Assembly length (bp)
+  * _scaffold_count_ : Number of scaffolds
+  * _scaffold_N50_bp_ : Scaffold N<sub>50</sub> (bp)
+  * _scaffold_N90_bp_ : Scaffold N<sub>90</sub> (bp)
+  * _contig_count_ : Number of contigs
+  * _contig_N50_bp_ : Contig N<sub>50</sub> (bp)
+  * _contig_N90_bp_ : Contig N<sub>90</sub> (bp)
+  * _GC_perc_ : GC content (%)
+  * _gaps_count_ : Number of gaps (min length to define a gap can be changed with --gap parameter)
+  * _gaps_sum_bp_ : Total gap length (bp)
+  * _gaps_perc_ : Proportion of genome composed of gaps (%)
 
 ## *ari.py*
 - Calculates the Adjusted Rand Index between clusters schemes.
