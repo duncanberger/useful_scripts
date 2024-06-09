@@ -59,7 +59,7 @@ Parameters:
   -f FILE, --file FILE            Input FASTA file
   -s, --sort                      Sort by header name
   -l LENGTH, --length LENGTH      Keep only contigs longer than the specified length
-  -p PREFIX, --prefix PREFIX      Append prefix to each contig header followed by a delimiter (period)
+  -p PREFIX, --prefix PREFIX      Append prefix to each contig header
   -i INCLUDE, --include INCLUDE   File with list of contig headers to include
   -e EXCLUDE, --exclude EXCLUDE   File with list of contig headers to exclude
   -o OUTPUT, --output OUTPUT      Output file name
