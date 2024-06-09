@@ -30,7 +30,7 @@ Usage:
 ### *ari.py*
 - Calculates the Adjusted Rand Index between clusters schemes.
 - **Input:** takes tab or comma separated files (works on any number of files ≥ 2).
-- **Input format:** sample_name,cluster_id \
+- **Input format:** sample_name,cluster_id 
 
 Usage:
   ```
@@ -38,7 +38,7 @@ Usage:
   ```
 - **Output:** pairwise ARI values in both list and matrix format
 ### *switch_names.py*
-- Switches the names of two files.\
+- Switches the names of two files.
   
 Usage:
   ```
