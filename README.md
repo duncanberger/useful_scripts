@@ -1,6 +1,6 @@
 # Useful scripts
 
-A repository of useful scripts/code used across multiple projects.
+A repository of scripts/code used across multiple projects.
 
 ## *asm_stats.py*
 - Calculates common assembly statistics for one or more FASTA files.
