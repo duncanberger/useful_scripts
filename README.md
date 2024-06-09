@@ -36,6 +36,27 @@ Usage:
   ari.py <file1> <file2> <file3>
   ```
 - **Output:** pairwise ARI values in both list and matrix format
+## *fa_select.py*
+- Calculates the Adjusted Rand Index between clusters schemes.
+- **Input:** FASTA file
+
+Usage:
+  ```
+  fa_select.py -f <FASTA>
+  ```
+Parameters:
+  ```
+  -f FILE, --file FILE            Input FASTA file
+  -s, --sort                      Sort by header name
+  -l LENGTH, --length LENGTH      Keep only contigs longer than the specified length
+  -p PREFIX, --prefix PREFIX      Append prefix to each contig header followed by a delimiter (period)
+  -i INCLUDE, --include INCLUDE   File with list of contig headers to include
+  -e EXCLUDE, --exclude EXCLUDE   File with list of contig headers to exclude
+  -o OUTPUT, --output OUTPUT      Output file name
+  -v, --version                   Show program's version number and exit
+  ```
+- **Output:** FASTA file
+
 ## *switch_names.py*
 - Switches the names of two files.
   
