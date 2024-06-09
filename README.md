@@ -44,3 +44,27 @@ Usage:
   ```
   switch_names.py --file1 <first_file> --file2 <second_file>
   ```
+### *unique_values.py*
+- For a specified column, returns one representative row containing each unique value in the dataframe. Similiar to 'uniq' on a single column but returns the whole row. 
+- **Input:** takes a tab separated file with a header (relevant column must be specified with the --col parameter) and --mode determines whether the 'first' row in a dataframe containing the value is retained or a row is randomly selected.\
+
+Usage:
+  ```
+  unique_values.py --input <input file> --col <column name> --mode <first|random>
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
