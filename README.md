@@ -12,6 +12,16 @@ Usage:
 
   asm_stats.py --fasta_dir <fasta_dir/>
   ```
+
+Parameters:
+```
+  -f FILE, --file FILE            Input FASTA file
+  --fasta_dir FASTA_DIR           Directory containing FASTA files
+  --fasta FASTA                   Single FASTA file
+  --gap GAP                       Minimum gap length to be considered a scaffold (optional) [2]
+  --output OUTPUT                 Output file prefix (optional) ['sample']
+  --version                       Show program's version number and exit
+```
 * **Output**: CSV file containing assembly metrics with columns:
   * sampleid : Based on the first part of the input fasta (delimeter: '.')
   * assembly_length_bp : Assembly length (bp)
