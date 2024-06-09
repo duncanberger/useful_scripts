@@ -5,7 +5,7 @@ A repository of useful scripts/code used across multiple projects.
 ## Descriptions
 ### *asm_stats.py*
 - Calculates common assembly statistics for one or more FASTA files.
-- **Input:** takes either a single FASTA or a directory of FASTA files.\
+- **Input:** takes either a single FASTA or a directory of FASTA files.
 
 Usage:
   ```
