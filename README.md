@@ -46,6 +46,25 @@ Usage:
   ari.py <file1> <file2> <file3>
   ```
 - **Output:** pairwise ARI values in both list and matrix format
+## *code_similarity.py*
+- Calculates the Cosine similarity, Jaccard similarity, longest common substring and Abstract Syntax Tree (optional, not fully tested) between different input files.
+- **Input:** two directories of files to be compared (at present must be .md, .R or .py files)
+
+Usage:
+  ```
+  code_similarity.py --dir1 <first directory/> --dir2 <second directory/>
+  ```
+Parameters:
+```
+options:
+  -h, --help          show this help message and exit
+  --dir1 DIR1         Path to the first directory of scripts
+  --dir2 DIR2         Path to the second directory of scripts
+  --include-comments  Include comments in the similarity comparison
+  --enable-ast        Enable AST-based similarity comparison for Python files
+  --keep-duplicates   Keep duplicate lines in the similarity comparison
+```
+- **Output:** pairwise ARI values in both list and matrix format
 ## *fa_select.py*
 - Calculates the Adjusted Rand Index between clusters schemes.
 - **Input:** FASTA file
@@ -66,6 +85,27 @@ Parameters:
   -v, --version                   Show program's version number and exit
   ```
 - **Output:** FASTA file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## *switch_names.py*
 - Switches the names of two files.
