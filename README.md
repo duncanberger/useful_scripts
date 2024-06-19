@@ -86,26 +86,25 @@ Parameters:
   ```
 - **Output:** FASTA file
 
+## *split_spreadsheet.py*
+- Converts an excel spreadsheet into individual, named after each tab name.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Usage:
+  ```
+  split_spreadsheet.py -e <spreadsheet> -o  <output directory name>
+  ```
+Parameters:
+  ```
+options:
+  -h, --help            show this help message and exit
+  -e EXCEL_FILE_PATH, --excel_file_path EXCEL_FILE_PATH
+                        Path to the Excel file.
+  -o OUTPUT_DIRECTORY, --output_directory OUTPUT_DIRECTORY
+                        Directory to save the output files.
+  -f {csv,tsv}, --format {csv,tsv}
+                        Output format: csv or tsv (default: csv)
+  ```
+- **Output:** Directory with individual TSV or CSV files
 
 ## *switch_names.py*
 - Switches the names of two files.
