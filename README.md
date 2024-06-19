@@ -65,6 +65,29 @@ options:
   --keep-duplicates   Keep duplicate lines in the similarity comparison
 ```
 - **Output:** pairwise ARI values in both list and matrix format
+
+
+## *count_file_differences.py* [ Note: not fully tested ] 
+- Counts the pairwise row and column differences between files. 
+- **Input:** two directories of CSV files to be compared.
+
+Usage:
+  ```
+  code_similarity.py --dir1 <first directory/> --dir2 <second directory/> --output <output file prefix>
+  ```
+Parameters:
+```
+options:
+  -h, --help       show this help message and exit
+  --dir1 DIR1      Path to the first directory
+  --dir2 DIR2      Path to the second directory
+  --output OUTPUT  Output TSV file for comparison results
+```
+* **Output:** 3 files:
+  * _{prefix}.tsv_: Pairwise comparisons between two files, with filenames (cols 1&2), counts of differences by row (col3) or column (col4), names of rows that have changed (col5) and names of columns that have changed (col6)
+  * _{prefix}.row_diff_matrix.tsv_: Matrix of pariwise row differences (counts)
+  * _{prefix}.col_diff_matrix.tsv_: Matrix of pariwise column differences (counts)
+
 ## *fa_select.py*
 - Calculates the Adjusted Rand Index between clusters schemes.
 - **Input:** FASTA file
