@@ -70,13 +70,6 @@ def parse_args():
 ###### Main
 def main():
 	args = parse_args()
-
-# dir1, dir2, output_file
-
-def main():
-
-	args = parse_args()
-
 	files1 = [os.path.join(args.dir1, f) for f in os.listdir(args.dir1) if f.endswith('.csv') or f.endswith('.tsv')]
 	files2 = [os.path.join(args.dir2, f) for f in os.listdir(args.dir2) if f.endswith('.csv') or f.endswith('.tsv')]
 
