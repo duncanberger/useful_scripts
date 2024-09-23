@@ -89,7 +89,7 @@ options:
   * _{prefix}.col_diff_matrix.tsv_: Matrix of pariwise column differences (counts)
 
 ## *fa_select.py*
-- Calculates the Adjusted Rand Index between clusters schemes.
+- Renames, subsets and.or sorts FASTA files. 
 - **Input:** FASTA file
 
 Usage:
@@ -110,7 +110,7 @@ Parameters:
 - **Output:** FASTA file
 
 ## *split_spreadsheet.py*
-- Converts an excel spreadsheet into individual, named after each tab name.
+- Converts an excel spreadsheet into individual sheets, named after each tab name.
 
 Usage:
   ```
@@ -131,7 +131,6 @@ options:
 
 ## *switch_names.py*
 - Switches the names of two files.
-  
 Usage:
   ```
   switch_names.py --file1 <first_file> --file2 <second_file>
