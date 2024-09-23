@@ -72,7 +72,8 @@ def main():
 	aris = compute_ari(clusterings, args.files)
 
 	num_files = len(args.files)
-	ari_matrix = np.zeros((num_files, num_files))
+	ari_matrix = np.empty((num_files, num_files))
+	ari_matrix[:] = np.nan
 
 	for (file1, file2, ari) in aris:
 		i = args.files.index(file1)
