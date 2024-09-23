@@ -89,7 +89,7 @@ options:
   * _{prefix}.col_diff_matrix.tsv_: Matrix of pariwise column differences (counts)
 
 ## *fa_select.py*
-- Renames, subsets and.or sorts FASTA files. 
+- Renames, subsets and/or sorts FASTA files. 
 - **Input:** FASTA file
 
 Usage:
