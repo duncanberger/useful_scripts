@@ -41,6 +41,8 @@ def compute_ari(clusterings, files):
 		common_samples = set(clusterings[i].keys()).intersection(clusterings[j].keys())
 		labels1 = [clusterings[i][sample] for sample in common_samples]
 		labels2 = [clusterings[j][sample] for sample in common_samples]
+                if len(labels2) <2 or len(labels1) <2:
+                        break
 		ari = adjusted_rand_score(labels1, labels2)
 		aris.append((files[i], files[j], ari))
 	return aris
