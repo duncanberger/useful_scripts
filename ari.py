@@ -81,6 +81,8 @@ def main():
 
 	# Write ARI matrix to file
 	ari_matrix_df = pd.DataFrame(ari_matrix, index=args.files, columns=args.files)
+	for i in range(num_files):
+		ari_matrix[i,i] = 1.0
 	ari_matrix_df.to_csv(args.matrix_output)
 
 	# Write ARI list to file
