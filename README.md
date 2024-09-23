@@ -37,7 +37,7 @@ Parameters:
   * _gaps_perc_ : Proportion of genome composed of gaps (%)
 
 ## *ari.py*
-- Calculates the Adjusted Rand Index between clusters schemes.
+- Calculates the Adjusted Rand Index between clustering schemes.
 - **Input:** takes tab or comma separated files (works on any number of files ≥ 2).
 - **Input format:** sample_name,cluster_id 
 
