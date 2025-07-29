@@ -4,7 +4,6 @@ from collections import defaultdict
 import sys
 
 def parse_attributes(attr_string):
-    """Parse GFF3 attributes column into a dictionary"""
     return dict(pair.split('=') for pair in attr_string.strip().split(';') if '=' in pair)
 
 def get_id(attr):
@@ -62,7 +61,6 @@ def write_filtered_gff(gff_lines, output_file):
             if not multi_exon_mrnas:
                 continue
 
-            # Write gene
             for line in feature_lines[gene_id]:
                 out.write(line)
 
